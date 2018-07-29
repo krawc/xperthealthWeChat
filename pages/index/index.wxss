@@ -1,0 +1,123 @@
+/**index.wxss**/
+
+.container {
+  background: linear-gradient(0deg, rgba(196, 196, 196, 0.34) 0%, rgba(196, 196, 196, 0) 63.19%);
+  min-height: 100vh;
+}
+
+.topBar {
+  height: 40px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.25);
+  z-index: 9999;
+  background: #fff;
+}
+
+.topBar-logo {
+  height: 32px;
+  width: 123px;
+}
+
+.slider {
+  height: auto;
+  display: flex;
+  width: 100%;
+  -webkit-clip-path: ellipse(100% 45% at 50% 36%);
+  clip-path: ellipse(100% 45% at 50% 36%);
+}
+
+.slider .slider-img {
+  width: 100%;
+  margin: 0;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+  font-family: Ubuntu, sans-serif;
+  font-size: 2em;
+}
+
+.buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px 2vw 30vh;
+}
+
+.menu-buttons {
+  /* display: flex; */
+  width: 100%;
+  /* flex-direction: row; */
+  flex: 0 0 44.4%;
+  margin: 2%;
+  padding: 0.8%;
+  background: #eee;
+  background: linear-gradient(to right, #df4545 0%, #004982 100%);
+  border-radius: 8px;
+  display: inline-block;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.button {
+  flex:  1;
+  background: #fff;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 10vh;
+  padding: 10px;
+}
+
+.button-icon {
+  width: 80%;
+  height: auto;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.button-texts{
+  grid-column: 2/3;
+  text-align: left;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+
+.button-texts--text_cn,
+.button-texts--text_en {
+  font-family: sans-serif;
+  color: #004982;
+}
+.button-texts--text_cn {
+  line-height: 1.2em;
+  font-size: 1.2em;
+
+}
+
+.button-texts--text_en {
+  font-family: Ubuntu, sans-serif;
+  line-height: 1em;
+  font-weight: 300;
+  font-size: 0.9em;
+}
+

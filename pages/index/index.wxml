@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="topBar">
+    <image class="topBar-logo" src="{{logo}}" mode="cover"></image>
+  </view>
+  <!-- <view class="userinfo">
+    <block>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view> -->
+  <view class="slider">
+    <image bindtap="bindViewTap" class="slider-img" src="{{slider.img1}}" mode="cover"></image>
+  </view>
+  <view class="buttons-container">
+    <view class="menu-buttons" wx:for="{{buttons}}" wx:key="">
+      <button class="button">
+        <image class="button-icon" src="{{item.img}}" mode="cover"></image>
+        <div class="button-texts">
+          <text class="button-texts--text_cn">{{item.text_cn}}</text>
+          <text class="button-texts--text_en">{{item.text_en}}</text>
+        </div>
+      </button>
+    </view>
+  </view>
+</view>
